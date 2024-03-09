@@ -21,29 +21,6 @@ searchButton.addEventListener('click', async () => {
     }
 });
 
-/* const{moves} = pokemon;
-    const [firstMove] = moves;
-    const {move} = firstMove;
-    const {name} = move; */
-const pokemonIndices = (pokemon) => {
-  const pokemonIndices = document.getElementById('sprites');
-  pokemonDisplay.innerHTML = '';
-  for(let i=0; i<=19; i++){
-    const index = document.createElement('span');
-    index.textContent = pokemon.game_indices[i].game_index;
-    pokemonIndices.appendChild(index);
-  }
-};
-
-/* const pokemonMoves = (pokemon) => {
-  const pokemonMoves = document.getElementById('moves');
-  pokemonDisplay.innerHTML = '';
-    const index = document.createElement('span');
-    index.textContent = pokemon.moves.name;
-    pokemonIndices.appendChild(index);
-};
- */
-
 const  displayPokemon = (pokemon) => {
     pokemonDisplay.innerHTML = '';
     const pokemonName = document.createElement('h2');
