@@ -14,8 +14,7 @@ searchButton.addEventListener('click', async () => {
         console.log(pokemon);
         displayPokemon(pokemon);
         displayPokemonSprites(pokemon, 'front_default'); 
-        pokemonIndices(pokemon);
-        pokemonMoves(pokemon);
+        
     } catch (error) {
         console.error("Error al buscar el Pokémon:", error);
     }
